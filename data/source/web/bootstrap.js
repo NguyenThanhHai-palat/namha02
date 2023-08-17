@@ -6278,12 +6278,6 @@
   
     defineJQueryPlugin(Toast);
   
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap index.umd.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-     * --------------------------------------------------------------------------
-     */
   
     const index_umd = {
       Alert,
