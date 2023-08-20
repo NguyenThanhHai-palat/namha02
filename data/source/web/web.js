@@ -1,4 +1,4 @@
-function doconload(g){
+function webonload(g){
   if(g=='3'){
     let user;
     function setCookie(cname, cvalue, exdays) {
