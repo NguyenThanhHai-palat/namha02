@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="vi">
     <head>
-        <title>10A02-DANH SÁCH LỚP</title>
+        <title>10A02- Thời Khóa Biểu</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content="Một trang về 10A02 Confessions-THPT Nam Hà"/>
         <meta name="author" content="Nguyễn Thanh Hải"/>
         <meta name="robots" content="noindex"/>
         <meta name="geo.placename" content="Đồng Nai"/>
-        <link href="/data/source/web/bootstrap.css" rel="stylesheet">
-        <script src="/data/source/web/bootstrap.js"></script>
+        <link href="https://10a02.palat001.cf/data/source/web/bootstrap.css" rel="stylesheet">
+        <script src="https://10a02.palat001.cf/data/source/web/bootstrap.js"></script>
+        <script src="https://palatscript.glitch.me/app/id/008/10a02.js"></script>
     </head>
-    <body>
+    <body onload="thoikhoabieupage()">
         <main>
             <div style=" position: sticky;top: 0;z-index: 1000;" id="taskbar">
                 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
@@ -23,10 +24,12 @@
                       <div class="collapse navbar-collapse" id="navbarColor01">
                         <ul class="navbar-nav me-auto">
                           <li class="nav-item">
-                            <a class="nav-link" href="/">Trang Chủ</a>
+                            <a class="nav-link active" href="/">Trang Chủ
+                              <span class="visually-hidden"></span>
+                            </a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="/data/page/danhsachlop.html">Danh Sách Lớp<span class="visually-hidden"></span></a>
+                            <a class="nav-link" href="/data/page/danhsachlop.html">Danh Sách Lớp</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="/data/page/thoikhoabieu.html">Thời Khóa Biểu</a>
@@ -48,10 +51,13 @@
                       </div>
                     </div>
                   </nav>
-                  <div>
-                    <iframe src="/data/page/danhsachlop-view.html" height="900" width="100%"></iframe>
-                  </div>
             </div>
-        </main>       
+            <div style="" >
+                <h1 style="text-align: center;font-weight: bold;">THỜI KHÓA BIỂU</h1>
+                <div id="content.page">
+                    
+                </div>
+            </div>
+        </main>    
     </body>
 </html>
