@@ -5,7 +5,7 @@ https://10a02.palat001.cf
 path_main:
 /
 [data]
-|8|
+|4|
 data\\login.a
 data\\asset.tmp
 
@@ -38,3 +38,28 @@ data\\asset.tmp
 
 
 
+
+
+
+
+
+[NOF]
+
+
+[config:app.a]
+h:[etf]
+-TITLE
+-NAME_CONTENT(LST)
+-URL
+10A02_APP:
+1.0
+SIZE _L _C:
+64 128
+UPDATE:
+0
+
+
+
+
+
+[END.DATA]
