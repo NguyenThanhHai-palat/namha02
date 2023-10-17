@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="USERID.xsd" generated="2023-10-16T00:24:36">
+<USERID>
+<ID>1</ID>
+<HovaTen>Phạm Huỳnh Khắc Duy</HovaTen>
+<ID_NAME>PHAM HUYNH KHAC DUY</ID_NAME>
+<Ngaysinh>2008-10-02T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>2</ID>
+<HovaTen>Hồ Quốc Đạt</HovaTen>
+<ID_NAME>HO QUOC DAT</ID_NAME>
+<Ngaysinh>2008-10-08T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>3</ID>
+<HovaTen>Nguyễn Phan Kim Đạt</HovaTen>
+<ID_NAME>NGUYEN PHAN KIM DAT</ID_NAME>
+<Ngaysinh>2008-04-18T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>0</ID>
+<HovaTen>Tăng Huỳnh Ngọc Anh</HovaTen>
+<ID_NAME>TANG HUYNH NGOC ANH</ID_NAME>
+<Ngaysinh>2008-09-15T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>4</ID>
+<HovaTen>Trần Thành Đạt</HovaTen>
+<ID_NAME>TRAN THANH DAT</ID_NAME>
+<Ngaysinh>2008-04-03T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>5</ID>
+<HovaTen>Vũ Thành Đạt</HovaTen>
+<ID_NAME>VU THANH DAT</ID_NAME>
+<Ngaysinh>2008-07-03T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>6</ID>
+<HovaTen>Nguyễn Thanh Hải</HovaTen>
+<ID_NAME>NGUYEN THANH HAI</ID_NAME>
+<Ngaysinh>2008-07-12T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>7</ID>
+<HovaTen>Lý Văn Hào</HovaTen>
+<ID_NAME>LY VAN HAO</ID_NAME>
+<Ngaysinh>2006-09-27T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>8</ID>
+<HovaTen>Trương Minh Hằng</HovaTen>
+<ID_NAME>TRUONG MINH HANG</ID_NAME>
+<Ngaysinh>2008-10-09T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>9</ID>
+<HovaTen>Lý Gia Hân</HovaTen>
+<ID_NAME>LY GIA HAN</ID_NAME>
+<Ngaysinh>2008-10-30T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>10</ID>
+<HovaTen>Phạm Trần Minh Hiếu</HovaTen>
+<ID_NAME>PHAM TRAN MINH HIEU</ID_NAME>
+<Ngaysinh>2008-01-06T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>11</ID>
+<HovaTen>Phan Tấn Hòa</HovaTen>
+<ID_NAME>PHAN TAN HOA</ID_NAME>
+<Ngaysinh>2008-04-01T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>12</ID>
+<HovaTen>Trần Hòa</HovaTen>
+<ID_NAME>TRAN HOA</ID_NAME>
+<Ngaysinh>2008-11-07T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>13</ID>
+<HovaTen>Nguyễn Hữu Hoàng</HovaTen>
+<ID_NAME>NGUYEN HUU HOANG</ID_NAME>
+<Ngaysinh>2008-03-19T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>14</ID>
+<HovaTen>Chu Nhật Huy</HovaTen>
+<ID_NAME>CHU NHAT HUY</ID_NAME>
+<Ngaysinh>2008-11-19T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>15</ID>
+<HovaTen>Huỳnh Phúc Khang</HovaTen>
+<ID_NAME>HUYNH PHUC KHANG</ID_NAME>
+<Ngaysinh>2008-10-28T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>16</ID>
+<HovaTen>Lưu Duy Khang</HovaTen>
+<ID_NAME>LUU DUY KHANG</ID_NAME>
+<Ngaysinh>2008-09-05T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>17</ID>
+<HovaTen>Lê Khoa</HovaTen>
+<ID_NAME>LE KHOA</ID_NAME>
+<Ngaysinh>2008-11-16T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>18</ID>
+<HovaTen>Vũ Đình Khôi</HovaTen>
+<ID_NAME>VU DINH KHOI</ID_NAME>
+<Ngaysinh>2008-05-27T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>19</ID>
+<HovaTen>Trần Tuấn Kiệt</HovaTen>
+<ID_NAME>TRAN TUAN KIET</ID_NAME>
+<Ngaysinh>2008-04-13T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>20</ID>
+<HovaTen>Nguyễn Hoàng Khánh Lam</HovaTen>
+<ID_NAME>NGUYEN HOANG KHANH LAM</ID_NAME>
+<Ngaysinh>2008-01-01T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>21</ID>
+<HovaTen>Trần Hữu Lộc</HovaTen>
+<ID_NAME>TRAN HUU LOC</ID_NAME>
+<Ngaysinh>2008-01-17T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>22</ID>
+<HovaTen>Lê Thị Cẩm Ly</HovaTen>
+<ID_NAME>LE THI CAM LY</ID_NAME>
+<Ngaysinh>2008-09-01T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>23</ID>
+<HovaTen>Trần Tuyết Mai</HovaTen>
+<ID_NAME>TRAN TUYET MAI</ID_NAME>
+<Ngaysinh>2008-02-01T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>24</ID>
+<HovaTen>Phạm Bình Minh</HovaTen>
+<ID_NAME>PHAM BINH MINH</ID_NAME>
+<Ngaysinh>2008-01-11T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>25</ID>
+<HovaTen>Đồng Thanh Ngân</HovaTen>
+<ID_NAME>DONG THANH NGAN</ID_NAME>
+<Ngaysinh>2008-01-30T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>26</ID>
+<HovaTen>Huỳnh Ngọc Khánh Ngân</HovaTen>
+<ID_NAME>HUYNH NGOC KHANH NGAN</ID_NAME>
+<Ngaysinh>2008-02-24T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>27</ID>
+<HovaTen>Nguyễn Trần Kim Ngân</HovaTen>
+<ID_NAME>NGUYEN TRAN KIM NGAN</ID_NAME>
+<Ngaysinh>2008-10-22T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>28</ID>
+<HovaTen>Nguyễn Phạm Bảo Ngọc</HovaTen>
+<ID_NAME>NGUYEN PHAM BAO NGOC</ID_NAME>
+<Ngaysinh>2008-12-09T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>29</ID>
+<HovaTen>Ôn Minh Nhã</HovaTen>
+<ID_NAME>ON MINH NHA</ID_NAME>
+<Ngaysinh>2008-09-11T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>30</ID>
+<HovaTen>Đinh Trần Quỳnh Như</HovaTen>
+<ID_NAME>DINH TRAN QUYNH NHU</ID_NAME>
+<Ngaysinh>2008-10-03T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>31</ID>
+<HovaTen>Nguyễn Ngô Đăng Phúc</HovaTen>
+<ID_NAME>NGUYEN NGO DANG PHUC</ID_NAME>
+<Ngaysinh>2008-06-05T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>32</ID>
+<HovaTen>Nguyễn Thanh Phúc</HovaTen>
+<ID_NAME>NGUYEN THANH PHUC</ID_NAME>
+<Ngaysinh>2008-04-26T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>33</ID>
+<HovaTen>Phạm Minh Phương</HovaTen>
+<ID_NAME>PHAM MINH PHUONG</ID_NAME>
+<Ngaysinh>2008-04-13T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>34</ID>
+<HovaTen>Nguyễn Duy Quang</HovaTen>
+<ID_NAME>NGUYEN DUY QUANG</ID_NAME>
+<Ngaysinh>2008-07-01T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>35</ID>
+<HovaTen>Phạm Hồ Minh Quang</HovaTen>
+<ID_NAME>PHAM HO MINH QUANG</ID_NAME>
+<Ngaysinh>2008-11-10T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>36</ID>
+<HovaTen>Đặng Thị Diễm Quỳnh</HovaTen>
+<ID_NAME>DANG THI DIEM QUYNH</ID_NAME>
+<Ngaysinh>2008-05-22T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>37</ID>
+<HovaTen>Đỗ Phương Thảo</HovaTen>
+<ID_NAME>DO PHUONG THAO</ID_NAME>
+<Ngaysinh>2008-01-15T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>38</ID>
+<HovaTen>Tạ Triệu Thu Thủy</HovaTen>
+<ID_NAME>TA TRIEU THU THUY</ID_NAME>
+<Ngaysinh>2008-07-29T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>39</ID>
+<HovaTen>Trần Ngọc Anh Thy</HovaTen>
+<ID_NAME>TRAN NGOC ANH THY</ID_NAME>
+<Ngaysinh>2008-03-13T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>40</ID>
+<HovaTen>Nguyễn Đức Trí</HovaTen>
+<ID_NAME>NGUYEN DUC TRI</ID_NAME>
+<Ngaysinh>2008-02-09T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>41</ID>
+<HovaTen>Nguyễn Đức Trí</HovaTen>
+<ID_NAME>NGUYEN DUC TRI</ID_NAME>
+<Ngaysinh>2008-12-17T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>42</ID>
+<HovaTen>Nguyễn Hoàng Trinh</HovaTen>
+<ID_NAME>NGUYEN HOANG TRINH</ID_NAME>
+<Ngaysinh>2008-03-25T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>43</ID>
+<HovaTen>Hồ Thanh Trúc</HovaTen>
+<ID_NAME>HO THANH TRUC</ID_NAME>
+<Ngaysinh>2008-02-02T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>44</ID>
+<HovaTen>Nguyễn Cát Tường</HovaTen>
+<ID_NAME>NGUYEN CAT TUONG</ID_NAME>
+<Ngaysinh>2008-10-17T00:00:00</Ngaysinh>
+</USERID>
+<USERID>
+<ID>45</ID>
+</USERID>
+</dataroot>
