@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="vi">
     <head>
-        <title>10A02-TÀI LIỆU</title>
+        <title>10A02- Thời Khóa Biểu</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content="Một trang về 10A02 Confessions-THPT Nam Hà"/>
         <meta name="author" content="Nguyễn Thanh Hải"/>
         <meta name="robots" content="noindex"/>
         <meta name="geo.placename" content="Đồng Nai"/>
-        <link href="/data/source/web/bootstrap.css" rel="stylesheet">
-        <script src="/data/source/web/bootstrap.js"></script>
-        <script src="/data/source/web/web.js"></script>
+        <link href="https://10a02.palat001.cf/data/source/web/bootstrap.css" rel="stylesheet">
+        <script src="https://10a02.palat001.cf/data/source/web/bootstrap.js"></script>
     </head>
-    <body onload="filesprotected()">
+    <body onload="thoikhoabieupage()">
         <main>
             <div style=" position: sticky;top: 0;z-index: 1000;" id="taskbar">
                 <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
@@ -32,12 +31,12 @@
                             <a class="nav-link" href="/data/page/danhsachlop.html">Danh Sách Lớp</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="/data/page/thoikhoabieu.html">Thời Khóa Biểu</a>
+                            <a class="nav-link active" href="/data/page/thoikhoabieu.html">Thời Khóa Biểu</a>
                           </li>
                           <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Thêm..</a>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item active" href="/data/page/documents.html">Tài Liệu</a>
+                              <a class="dropdown-item" href="/data/page/documents.html">Tài Liệu</a>
                               <a class="dropdown-item" href="#">Thông Tin Giáo Viên</a>                             
                               <div class="dropdown-divider"></div>
                               <a class="dropdown-item" href="#">Về Chúng Tôi</a>
@@ -53,9 +52,36 @@
                   </nav>
             </div>
             <div>
-                <iframe src="https://vanbanlop10a02.glitch.me" frameborder="0" width="90%" height ="800px"></iframe>
+                <style>
+                  .ac {
+                    background-color: #f2f2f2;
+                    border-radius: 10px;
+                    padding: 20px;
+                    width: 500px;
+                    margin: 0 auto;
+                  }
+
+                  .ab {
+                    color: #fff;
+                    padding: 10px 20px;
+                    background-image: url("https://github.com/NguyenThanhHai-palat/8a3cloud/raw/main/webmain/windows.png");
+                    background-repeat: no-repeat;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    width:35%;
+                    background-size: cover; 
+                    display: block;
+                    text-align: center;
+                  }
+                </style>
+                <div class="ac">
+                  <h1>10A02</h1>
+                  <img src="\data\source\img\logoclass.jpg" alt="[LOGOAPP]">
+                  <p></p>
+                  <a href="https://10a02.palat001.cf/data/source/app/Release/10a02app1.0.0.0.exe" class="ab">᲼᲼</a>
+                  <a href="https://github.com/NguyenThanhHai-palat/namha02/releases/">Xem danh sách các bản cập nhật</a>
+              </div>
             </div>
-        </main> 
-        <footer id="footer.page"></footer>
+        </main>    
     </body>
 </html>
