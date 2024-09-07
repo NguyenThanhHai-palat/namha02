@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>10A02-DANH SÁCH LỚP</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="Một trang về 10A02 Confessions-THPT Nam Hà"/>
+        <meta name="author" content="Nguyễn Thanh Hải"/>
+        <meta name="robots" content="noindex"/>
+        <meta name="geo.placename" content="Đồng Nai"/>
+        <link href="/data/source/web/bootstrap.css" rel="stylesheet">
+        <script src="/data/source/web/bootstrap.js"></script>
+    </head>
+    <body>
+      <main>
+        <div style=" position: sticky;top: 0;z-index: 1000;" id="taskbar">
+            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/">11A02 - WEBSITE</a>
+                  <div class="collapse navbar-collapse" id="navbarColor01"><ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="/data/page/danhsach.html">Tra Cứu Danh Sách Lớp và Danh Sách Giáo Viên Bộ Môn</a></li></ul></div>
+                </div>
+              </nav>
+        </div>
+        <div class="" >
+           
+                    <div>
+                      <form id="idForm">
+                          <label for="stttvl">NHẬP SỐ THỨ TỰ ĐỂ LẤY THÔNG TIN THÀNH VIÊN LỚP:</label><br>
+                          <input type="text" id="stttvl" name="stttvl" required>
+                          <button type="submit">Tra Cứu</button>
+                      </form>
+                  </div>
+                  <div id="datauser">
+                      <div id="responedata"></div>
+                  </div>
+                  <div id="gvbom">
+                    <form id="idForm2">
+                        <label for="tengv">NHẬP SỐ THỨ TỰ ĐỂ LẤY THÔNG TIN GIÁO VIÊN BỘ MÔN:</label><br>
+                        <input type="text" id="tengv" name="tengv" required>
+                        <button type="submit">Tra Cứu</button>
+                    </form>
+                </div>
+                <div id="datagiaovien">
+                    <div id="responedata"></div>
+                </div>
+                <script>
+                document.getElementById('idForm2').addEventListener('submit', function(event) {
+                  event.preventDefault();
+                  document.getElementById('datagiaovien').innerText = 'Chưa cập nhật dữ liệu này';
+                });
+                document.getElementById('idForm').addEventListener('submit', function(event) {
+                  event.preventDefault();
+                  const id = document.getElementById('stttvl').value;
+                  loaddatauser(id);
+                  id="";
+                });
+                function loaddatauser(stt) {
+                  fetch('https://a02namha-server.glitch.me/tra-stt', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify({ stt: stt })
+                  })
+                  .then(response => {
+                      if (!response.ok) {
+                          throw new Error('Không có phản hồi từ máy chủ: ' + response.statusText);
+                      }
+                      return response.json();
+                  })
+                  .then(data => {
+                  document.getElementById('datauser').innerHTML = '<style>table, th, td {border: 1px solid black;border-collapse: collapse;margin-left: auto;margin-right: auto;}</style><table style="width:auto"><tr style=""><th>STT</th><th>Họ Và Tên</th><th>Ngày Sinh</th> <th>Giới Tính</th><th>Tài Khoản Facebook</th><th>Chứ Vụ Lớp</th><th>Thuộc Tổ</th></tr><tr><td style="text-align:center">'+data.stt+'</td><td>'+data.name+'</td><td>'+data.date+'</td><td>'+data.sx+'</td><td><a href="'+data.fburl+'">'+data.fburl+'</a></td><td>'+data.chucvulop+'</td><td style="text-align:center">'+data.thuocto+'</td></tr></table><p>THÔNG TIN HIỆN Ở ĐÂY ĐÃ ĐƯỢC CÔNG KHAI Ở DANH SÁCH LỚP VÀ GROUP LỚP !</p>'
+                  })
+                  .catch(error => {
+                      console.error('Error:', error);
+                      document.getElementById('datauser').innerText = 'Đã xảy ra sự cố hoặc không tìm thấy người này từ dữ liệu máy chủ web lớp';
+                      document.getElementById('datauser').style.display = "block";
+                  });
+                }
+
+                </script>
+        </div>
+    </main>    
+    
+    <footer id="content.footer">
+
+    </footer>   
+    </body>
+</html>
