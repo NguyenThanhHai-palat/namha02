@@ -21,9 +21,9 @@
                 </div>
               </nav>
         </div>
-        <div class="" >
+        <div style="margin-left: auto;margin-right: auto;" >
            
-                    <div>
+                    <div >
                       <form id="idForm">
                           <label for="stttvl">NHẬP SỐ THỨ TỰ ĐỂ LẤY THÔNG TIN THÀNH VIÊN LỚP:</label><br>
                           <input type="text" id="stttvl" name="stttvl" required>
@@ -33,6 +33,7 @@
                   <div id="datauser">
                       <div id="responedata"></div>
                   </div>
+                  <br>
                   <div id="gvbom">
                     <form id="idForm2">
                         <label for="tengv">NHẬP SỐ THỨ TỰ ĐỂ LẤY THÔNG TIN GIÁO VIÊN BỘ MÔN:</label><br>
@@ -52,7 +53,7 @@
                   event.preventDefault();
                   const id = document.getElementById('stttvl').value;
                   loaddatauser(id);
-                  id="";
+             
                 });
                 function loaddatauser(stt) {
                   fetch('https://a02namha-server.glitch.me/tra-stt', {
