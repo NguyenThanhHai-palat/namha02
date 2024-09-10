@@ -24,8 +24,8 @@
                 </div>
               </nav>
         </div>
-        <div style="margin-left: auto;margin-right: auto;text-align: center;" >
-           
+        <div style="margin-left: auto;margin-right: auto;text-align: center;" onload="senddata()">
+          <span>Trạng thái: <span id="status">XIN CHỜ ĐANG KHỞI ĐỘNG MÁY CHỦ VÀ NẠP DỮ LIỆU.. "Mất vài giây"</span></span>
                     <div >
                       <form id="idForm">
                           <label for="stttvl">NHẬP SỐ THỨ TỰ ĐỂ LẤY THÔNG TIN THÀNH VIÊN LỚP:</label><br>
@@ -48,6 +48,30 @@
                     <div id="responedata"></div>
                 </div>
                 <script>
+                //event call server web
+                window.addEventListener("load", (event) => {
+                      fetch('https://a02namha-server.glitch.me/send', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify({"data":"11a02.palat.io.vn"})
+                  })
+                  .then(response => {
+                      if (!response.ok) {
+                          throw new Error('Không có phản hồi từ máy chủ: ' + response.statusText);
+                      }
+                      return response.json();
+                  })
+                  .then(data => {
+                   document.getElementById('status').innerText = 'Sẵn sàng';
+                  })
+                  .catch(error => {
+                      console.error('Error:', error);
+                      document.getElementById('status').innerText = 'Đã xảy ra sự cố trong phản hồi từ máy chủ!';
+                  });
+                });
+                //event load data
                 document.getElementById('idForm2').addEventListener('submit', function(event) {
                   event.preventDefault();
                   document.getElementById('datagiaovien').innerText = 'Chưa cập nhật dữ liệu này';
@@ -58,6 +82,7 @@
                   loaddatauser(id);
              
                 });
+                
                 function loaddatauser(stt) {
                   fetch('https://a02namha-server.glitch.me/tra-stt', {
                       method: 'POST',
