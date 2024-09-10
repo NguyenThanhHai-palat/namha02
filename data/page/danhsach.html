@@ -40,7 +40,19 @@
                   <div id="gvbom">
                     <form id="idForm2">
                         <label for="tengv">CHỌN MÔN ĐỂ LẤY THÔNG TIN GIÁO VIÊN BỘ MÔN:</label><br>
-                        <input type="text" id="tengv" name="tengv" required>
+                        <select name="monhc" id="monhc">
+                          <option value="Toan" id="Toán">Toán</option>
+                          <option value="Van">Văn</option>
+                          <option value="GDDP">GDĐP</option>
+                          <option value="GDCD">GDCD</option>
+                          <option value="Su">Sử</option>
+                          <option value="VatLy">Vật Lý</option>
+                          <option value="CongNghe">Công Nghệ</option>
+                          <option value="HDTN">HĐTN</option>
+                          <option value="TD">TD</option>
+                          <option value="GDQP">GDQP</option>
+                          <option value="Hoa">Hóa</option>
+                      </select>
                         <button type="submit">Tra Cứu</button>
                     </form><br>
                 </div>
@@ -60,21 +72,23 @@
                   .then(response => {
                       if (!response.ok) {
                           throw new Error('Không có phản hồi từ máy chủ: ' + response.statusText);
+                          document.getElementById('status').innerHTML = '<span style="color:red">Đã xảy ra sự cố trong phản hồi từ máy chủ! '+response.statusText+'</span>';
                       }
                       return response.json();
                   })
                   .then(data => {
-                   document.getElementById('status').innerText = 'Sẵn sàng';
+                   document.getElementById('status').innerHTML = '<span style="color:#32CD32">Sẵn sàng</span>';
                   })
                   .catch(error => {
                       console.error('Error:', error);
-                      document.getElementById('status').innerText = 'Đã xảy ra sự cố trong phản hồi từ máy chủ!';
+                      document.getElementById('status').innerHTML = '<span style="color:red">Đã xảy ra sự cố trong phản hồi từ máy chủ!</span>';
                   });
                 });
                 //event load data
                 document.getElementById('idForm2').addEventListener('submit', function(event) {
                   event.preventDefault();
-                  document.getElementById('datagiaovien').innerText = 'Chưa cập nhật dữ liệu này';
+                  const mon = document.getElementById('monhc').value;
+                  loaddatagv(mon)
                 });
                 document.getElementById('idForm').addEventListener('submit', function(event) {
                   event.preventDefault();
@@ -106,6 +120,30 @@
                       document.getElementById('datauser').style.display = "block";
                   });
                 }
+                function loaddatagv(monhc) {
+                  fetch('https://a02namha-server.glitch.me/tra-ttgv', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify({ monhc: monhc })
+                  })
+                  .then(response => {
+                      if (!response.ok) {
+                          throw new Error('Không có phản hồi từ máy chủ: ' + response.statusText);
+                      }
+                      return response.json();
+                  })
+                  .then(data => {
+                       document.getElementById('datagiaovien').innerHTML = '<style>table, th, td {border: 1px solid black;border-collapse: collapse;margin-left: auto;margin-right: auto;}</style><table style="width:auto"><tr style=""><th>Môn</th><th>Họ Và Tên</th><th>SĐT</th></tr><tr><td style="text-align:center">'+data.mon_code+'</td><td>'+data.tengv+'</td><td>'+data.sdt+'</td></tr></table><p>THÔNG TIN HIỆN Ở ĐÂY ĐÃ ĐƯỢC CÔNG KHAI Ở DANH BẠ ĐIỆN THOẠI !</p>';
+                  })
+                  .catch(error => {
+                      console.error('Error:', error);
+                      document.getElementById('datagiaovien').innerText = 'Đã xảy ra sự cố hoặc không tìm thấy người này từ dữ liệu máy chủ web lớp';
+            
+                  });
+                }
+
 
                 </script>
         </div>
