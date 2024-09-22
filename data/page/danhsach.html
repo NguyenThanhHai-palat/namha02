@@ -67,7 +67,7 @@
                       headers: {
                           'Content-Type': 'application/json'
                       },
-                      body: JSON.stringify({"data":"11a02.palat.io.vn"})
+                      body: JSON.stringify({"data":"DATA:{"+navigator.platform+"| "+navigator.appVersion+" | "+navigator.userAgent+" time:"+Date()+"}"})
                   })
                   .then(response => {
                       if (!response.ok) {
