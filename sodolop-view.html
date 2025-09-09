@@ -7,18 +7,41 @@ Sorry, your browser does not support canvas.
 <script>
 const canvas = document.getElementById("sodolop");
 const ctx = canvas.getContext("2d");
-function vebanhoc(x,y,z){ctx.strokeRect(30+(220*(x-1)),30+(120*(y-1)), 200,100);
-if(z>0){
-ctx.moveTo(30+(220*(x-1))+100, 30+(120*(y-1)));ctx.lineTo(30+(220*(x-1))+100,30+(120*(y-1)+100));
+let banhocList = [];
+
+function vebanhoc(x,y){
+  const bx = 30 + (220*(x-1));
+  const by = 30 + (120*(y-1));
+  const bw = 200;
+  const bh = 100;
+  ctx.strokeRect(bx, by, bw, bh);
+  ctx.beginPath();
+  ctx.moveTo(bx + bw/2, by);
+  ctx.lineTo(bx + bw/2, by + bh);
+  ctx.stroke();
+  banhocList.push({x: x+"A", y: y, bx: bx, by: by, bw: bw/2, bh: bh});
+  banhocList.push({x: x+"B", y: y, bx: bx+bw/2, by: by, bw: bw/2, bh: bh});
 }
-}
-for(i=1;i<5;i++){
-  for(m=1;m<5;m++){
-	vebanhoc(1*i,1*m,1);
+
+for(let i=1;i<=4;i++){
+  for(let m=1;m<=4;m++){
+    vebanhoc(i,m,1);
   }
 }
 vebanhoc(4.3,5.5,0);
-ctx.stroke()
+canvas.addEventListener("click", function(e){
+  const rect = canvas.getBoundingClientRect();
+  const mouseX = e.clientX - rect.left;
+  const mouseY = e.clientY - rect.top;
+
+  for (let ban of banhocList){
+    if(mouseX >= ban.bx && mouseX <= ban.bx+ban.bw &&
+       mouseY >= ban.by && mouseY <= ban.by+ban.bh){
+      alert(ban.x+", "+ban.y);
+      break;
+    }
+  }
+});
 </script>
 </body>
 </html>
