@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="sodolop" width="1000" height="700" style="border:1px solid #000000;">
+Sorry, your browser does not support canvas.
+</canvas>
+<script>
+const canvas = document.getElementById("sodolop");
+const ctx = canvas.getContext("2d");
+function vebanhoc(x,y,z){ctx.strokeRect(30+(220*(x-1)),30+(120*(y-1)), 200,100);
+if(z>0){
+ctx.moveTo(30+(220*(x-1))+100, 30+(120*(y-1)));ctx.lineTo(30+(220*(x-1))+100,30+(120*(y-1)+100));
+}
+}
+for(i=1;i<5;i++){
+  for(m=1;m<5;m++){
+	vebanhoc(1*i,1*m,1);
+  }
+}
+vebanhoc(4.3,5.5,0);
+ctx.stroke()
+</script>
+</body>
+</html>
