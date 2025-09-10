@@ -2,13 +2,15 @@
 <html>
 <head><title>SƠ ĐỒ LỚP ĐIỆN TỬ</title></head>
 <body>
-<canvas id="sodolop" width="1000" height="700" style="border:1px solid #000000;">
+<canvas id="sodolop" width="1000" height="900" style="border:1px solid #000000;">
 Sorry, your browser does not support canvas.
 </canvas>
 <script>
 const canvas = document.getElementById("sodolop");
 const ctx = canvas.getContext("2d");
 let banhocList = [];
+let sttthanhvien = {};
+let vitringoi = {};
 
 function vebanhoc(x,y){
   const bx = 30 + (220*(x-1));
@@ -23,13 +25,41 @@ function vebanhoc(x,y){
   banhocList.push({x: x+"A", y: y, bx: bx, by: by, bw: bw/2, bh: bh});
   banhocList.push({x: x+"B", y: y, bx: bx+bw/2, by: by, bw: bw/2, bh: bh});
 }
+function veTen(){
+  ctx.font = "14px Arial";
+  ctx.fillStyle = "blue";
+  for (let key in vitringoi.blocks){
+    const [ix, iy] = key.split(",").map(Number);
+    const block = vitringoi.blocks[key];
+    for (let side of ["A","B"]){
+      const stt = block[side];
+      if (stt && sttthanhvien[stt]){
+        const ban = banhocList.find(b=> b.x===ix+side && b.y===iy);
+        if(ban){
+          ctx.fillText(sttthanhvien[stt].name, ban.bx+5, ban.by+20);
+        }
+      }
+    }
+  }
+}
+async function loadData(){
+  const res1 = await fetch("https://12a02.palat.io.vn/data/source/user_admin/data.json");
+  const res2 = await fetch("https://12a02.palat.io.vn/data/source/user_admin/xepchongoi.json");
+  const data = await res1.json();
+  vitringoi = await res2.json();
+  sttthanhvien = {};
+  data.forEach(s => sttthanhvien[s.stt] = s);
+  veTen();
+}
+
+loadData();
 
 for(let i=1;i<=4;i++){
-  for(let m=1;m<=4;m++){
+  for(let m=1;m<=6;m++){
     vebanhoc(i,m,1);
   }
 }
-vebanhoc(4.3,5.5,0);
+vebanhoc(4.3,7.2,0);
 canvas.addEventListener("click", function(e){
   const rect = canvas.getBoundingClientRect();
   const mouseX = e.clientX - rect.left;
