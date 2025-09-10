@@ -1,10 +1,432 @@
-{
-   "ADMINPLT":"A0",
-   "GVCNLOP":"G1",
-   "UAD0":"U01",
-   "GVBMLOP":"G11",
-   "UAD1":"U02",
-   "UAD2":"U03",
-   "GuS0":"GS001",
-   "UAD3":"U04"
-}
+[
+  {
+    "stt": 1,
+    "name": "Đỗ Nguyễn Kim Anh",
+    "sx": "Nữ",
+    "date": "27/09/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=61560020764041",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 2,
+    "name": "Tăng Huỳnh Ngọc Anh",
+    "sx": "Nữ",
+    "date": "15/09/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100082236733960",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 3,
+    "name": "Phạm Huỳnh Khắc Duy",
+    "sx": "Nam",
+    "date": "02/10/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/caubecotac",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 4,
+    "name": "Hồ Quốc Đạt",
+    "sx": "Nam",
+    "date": "08/10/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100048280330798",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 5,
+    "name": "Nguyễn Phan Kim Đạt",
+    "sx": "Nam",
+    "date": "18/04/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100073626799695",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 6,
+    "name": "Trần Thành Đạt",
+    "sx": "Nam",
+    "date": "03/04/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100077806794580",
+    "chucvulop": "Lớp phó học tập",
+    "thuocto": ""
+  },
+  {
+    "stt": 7,
+    "name": "Vũ Thành Đạt",
+    "sx": "Nam",
+    "date": "03/07/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=61564115068116",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 8,
+    "name": "Nguyễn Thanh Hải",
+    "sx": "Nam",
+    "date": "12/07/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/palat.890",
+    "chucvulop": "Tổ trưởng tổ 3",
+    "thuocto": ""
+  },
+  {
+    "stt": 9,
+    "name": "Trương Minh Hằng",
+    "sx": "Nữ",
+    "date": "09/10/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/minhhang.truong.357622",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 10,
+    "name": "Phạm Trần Minh Hiếu",
+    "sx": "Nam",
+    "date": "06/01/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/profile.php?id=100051234097165",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 11,
+    "name": "Phan Tấn Hòa",
+    "sx": "Nam",
+    "date": "01/04/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100053126708347",
+    "chucvulop": "Tổ trưởng tổ 4",
+    "thuocto": ""
+  },
+  {
+    "stt": 12,
+    "name": "Trần Hòa",
+    "sx": "Nam",
+    "date": "07/11/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/profile.php?id=100065819992502",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 13,
+    "name": "Nguyễn Hữu Hoàng",
+    "sx": "Nam",
+    "date": "19/03/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100064504330109",
+    "chucvulop": "Tổ trưởng tổ 1",
+    "thuocto": ""
+  },
+  {
+    "stt": 14,
+    "name": "Chu Nhật Huy",
+    "sx": "Nam",
+    "date": "19/11/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/HuyChuyeucacban",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 15,
+    "name": "Huỳnh Phúc Khang",
+    "sx": "Nam",
+    "date": "28/10/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/profile.php?id=61551027509044",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 16,
+    "name": "Lưu Duy Khang",
+    "sx": "Nam",
+    "date": "05/09/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100075151467564",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 17,
+    "name": "Lê Khoa",
+    "sx": "Nam",
+    "date": "16/11/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100047265227096",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 18,
+    "name": "Vũ Đình Khôi",
+    "sx": "Nam",
+    "date": "27/05/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/profile.php?id=61553249664474",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 19,
+    "name": "Trần Tuấn Kiệt",
+    "sx": "Nam",
+    "date": "13/04/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100091891101904",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 20,
+    "name": "Nguyễn Hoàng Khánh Lam",
+    "sx": "Nữ",
+    "date": "01/01/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/profile.php?id=100081242448399",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 21,
+    "name": "Trần Hữu Lộc",
+    "sx": "Nam",
+    "date": "17/01/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=61561320186011",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 22,
+    "name": "Lê Thị Cẩm Ly",
+    "sx": "Nữ",
+    "date": "01/09/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100052720311409",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 23,
+    "name": "Trần Tuyết Mai",
+    "sx": "Nữ",
+    "date": "01/02/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100077985499940",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 24,
+    "name": "Phạm Bình Minh",
+    "sx": "Nam",
+    "date": "11/01/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/MP11108",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 25,
+    "name": "Đồng Thanh Ngân",
+    "sx": "Nữ",
+    "date": "30/01/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/thngan.archen",
+    "chucvulop": "Thủ Qũy",
+    "thuocto": ""
+  },
+  {
+    "stt": 26,
+    "name": "Huỳnh Ngọc Khánh Ngân",
+    "sx": "Nữ",
+    "date": "24/02/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/khanhh.ngann.792",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 27,
+    "name": "Nguyễn Trần Kim Ngân",
+    "sx": "Nữ",
+    "date": "22/10/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100086380508656",
+    "chucvulop": "Tổ trưởng tổ 2",
+    "thuocto": ""
+  },
+  {
+    "stt": 28,
+    "name": "Nguyễn Phạm Bảo Ngọc",
+    "sx": "Nữ",
+    "date": "09/12/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100050568816738",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 29,
+    "name": "Ôn Minh Nhã",
+    "sx": "Nam",
+    "date": "11/09/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100072733242553",
+    "chucvulop": "Lớp Trưởng",
+    "thuocto": ""
+  },
+  {
+    "stt": 30,
+    "name": "Đinh Trần Quỳnh Như",
+    "sx": "Nữ",
+    "date": "03/10/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100070801173850",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 31,
+    "name": "Nguyễn Ngô Đăng Phúc",
+    "sx": "Nam",
+    "date": "05/06/2008",
+    "noisinh": "TT-Huế",
+    "fburl": "https://www.facebook.com/profile.php?id=100088445585078",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 32,
+    "name": "Nguyễn Thanh Phúc",
+    "sx": "Nam",
+    "date": "26/04/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100050494120954",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 33,
+    "name": "Phạm Minh Phương",
+    "sx": "Nữ",
+    "date": "13/04/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/baecuaBangtan",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 34,
+    "name": "Nguyễn Duy Quang",
+    "sx": "Nam",
+    "date": "01/07/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/duyquang.nguyen.31542841",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 35,
+    "name": "Phạm Hồ Minh Quang",
+    "sx": "Nam",
+    "date": "10/11/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100081958819490",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 36,
+    "name": "Đặng Thị Diễm Quỳnh",
+    "sx": "Nữ",
+    "date": "22/05/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/dtdquinkcute",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 37,
+    "name": "Đỗ Phương Thảo",
+    "sx": "Nữ",
+    "date": "15/01/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100053057224664",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 38,
+    "name": "Trần Ngọc Anh Thy",
+    "sx": "Nữ",
+    "date": "13/03/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/AhnyhT.0313",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 39,
+    "name": "Nguyễn Đức Trí",
+    "sx": "Nam",
+    "date": "09/02/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100064883058963",
+    "chucvulop": "Bí Thư, Lớp phó lao động",
+    "thuocto": ""
+  },
+  {
+    "stt": 40,
+    "name": "Nguyễn Đức Trí",
+    "sx": "Nam",
+    "date": "17/12/2008",
+    "noisinh": "TPHCM",
+    "fburl": "https://www.facebook.com/nguyenductris1",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 41,
+    "name": "Nguyễn Hoàng Trinh",
+    "sx": "Nữ",
+    "date": "25/03/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100061755153625",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 42,
+    "name": "Hồ Thanh Trúc",
+    "sx": "Nữ",
+    "date": "02/02/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100071895578786",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  },
+  {
+    "stt": 43,
+    "name": "Nguyễn Cát Tường",
+    "sx": "Nữ",
+    "date": "17/10/2008",
+    "noisinh": "Đồng Nai",
+    "fburl": "https://www.facebook.com/profile.php?id=100078786130722",
+    "chucvulop": "Thành viên",
+    "thuocto": ""
+  }
+]
