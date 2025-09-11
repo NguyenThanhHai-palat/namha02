@@ -5,6 +5,7 @@
       margin-top: 20px;
       border-collapse: collapse;
       width: 1000px;
+      font-size: 20px
     }
     #infoTable th, #infoTable td {
       border: 1px solid black;
@@ -17,6 +18,7 @@
     }
   </style></head>
 <body>
+<h2 style="text-align: center;font-family: Arial;">SƠ ĐỒ LỚP</h2>
 <canvas id="sodolop" width="1000" height="900" style="border:1px solid #000000;">
 Sorry, your browser does not support canvas.
 </canvas>
@@ -30,11 +32,11 @@ Sorry, your browser does not support canvas.
       <th>Ngày sinh</th>
       <th>Chức vụ</th>
       <th>Facebook</th>
-      <th>Tuần Học</th>
     </tr>
   </thead>
   <tbody id="infothanhvienlop"></tbody>
 </table>
+<p style="font-size: 25px;">Tuần học thứ : <span id="tuanhoc">0</span> |  Giáo Viên Chủ Nhiệm: Trần Vũ Thuỳ Vy</p>
 </div>
 <script>
 const canvas = document.getElementById("sodolop");
@@ -45,11 +47,6 @@ let vitringoi = {};
 function showInfo(student) {
   const tbody = document.getElementById("infothanhvienlop");
   const today = new Date();
-  const week = tinhTuanHoc(today);
-  const dd = String(today.getDate()).padStart(2, '0');
-  const mm = String(today.getMonth() + 1).padStart(2, '0');
-  const yyyy = today.getFullYear();
-  const formattedDate = `${dd}/${mm}/${yyyy}`;
   tbody.innerHTML = `
     <tr>
       <td>${student.stt}</td>
@@ -58,7 +55,6 @@ function showInfo(student) {
       <td>${student.date}</td>
       <td>${student.chucvulop}</td>
       <td><a href="${student.fburl}" target="_blank">Link  (Lần cuối update 5/9/2024)</a></td>
-      <td>${week}</td>
     </tr>
   `;
 }
@@ -68,8 +64,12 @@ function tinhTuanHoc(dateStr) {
 
   const diffTime = currentDate - startDate;
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-  const weekNumber = Math.floor(diffDays / 7) + 1;
-
+  
+  const dd = String(dateStr.getDate()).padStart(2, '0');
+  const mm = String(dateStr.getMonth() + 1).padStart(2, '0');
+  const yyyy = dateStr.getFullYear();
+  const formattedDate = `${dd}/${mm}/${yyyy}`;
+  const weekNumber = Math.floor(diffDays / 7) + 1 + " | "+formattedDate;
   return weekNumber;
 }
 function vebanhoc(x,y,z){
@@ -89,8 +89,12 @@ function vebanhoc(x,y,z){
   else{
     ctx.strokeRect(bx, by, bw, bh);
     ctx.beginPath();
+    ctx.font = "25px Arial";
+
+    ctx.fillText("Bàn giáo viên", bx+8, by+40);
     ctx.stroke();
     banhocList.push({x: x, y: y, bx: bx, by: by, bw: bw, bh: bh});
+
   }
   
 }
@@ -128,7 +132,10 @@ async function loadData(){
   const res2 = await fetch("https://dnc-svc.palat.io.vn/dschongoi");
   vitringoi = await res2.json();
   sttthanhvien = {};
+  const today = new Date();
   data.forEach(s => sttthanhvien[s.stt] = s);
+  const ttw = document.getElementById("tuanhoc");
+  ttw.innerHTML=tinhTuanHoc(today);
   veTen();
 }
 
@@ -140,6 +147,7 @@ for(let i=1;i<=4;i++){
   }
 }
 vebanhoc(4.3,7.2,0);
+
 canvas.addEventListener("click", function(e){
   const rect = canvas.getBoundingClientRect();
   const mouseX = e.clientX - rect.left;
