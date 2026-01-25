@@ -22,7 +22,36 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         catch{console.error("KHÔNG TÌM THẤY ID VÉ")}
     }
+    const box = document.getElementById("BOX42");
 
+
+    if(id[0] == "r" && id[4]=="m"){
+        console.log("Nhận diện vé rau má")
+        document.getElementById("veid").innerHTML = "Vé: Rau má sữa"
+        box.style.backgroundImage = "url('datatraixuan/verauma.png')";
+        box.style.backgroundSize = "cover";
+        box.style.backgroundPosition = "center";
+        box.style.backgroundRepeat = "no-repeat";
+    }
+    else if(id[0] == "s" && id[4]=="t"){
+        console.log("Nhận diện vé sữa tươi trân châu đường đen")
+        document.getElementById("veid").innerHTML = "Vé: sữa tươi trân châu"
+        box.style.backgroundImage = "url('datatraixuan/suatuoi.png')";
+        box.style.backgroundSize = "cover";
+        box.style.backgroundPosition = "center";
+        box.style.backgroundRepeat = "no-repeat";
+    }
+    else if(id[0] == "x" && id[4]=="q"){
+        document.getElementById("veid").innerHTML = "Vé: Xiên nướng"
+        console.log("Nhận diện vé xiên que")
+        box.style.backgroundImage = "url('datatraixuan/thitxien.png')";
+        box.style.backgroundSize = "cover";
+        box.style.backgroundPosition = "center";
+        box.style.backgroundRepeat = "no-repeat";
+    }
+    else {
+        document.getElementById("veid").innerHTML = ""
+    }
     const qrCodeImage = document.getElementById("qr-vietqr");
     if (qrCodeImage) {
         qrCodeImage.src =
@@ -95,6 +124,7 @@ contactForm.addEventListener("submit", function (e) {
         if (response.status === 200) {
         alert('Cảm ơn bạn đã gửi - Định danh thành công');
         setTimeout(() => {
+            window.location.reload();
         }, 2000);
         } else {
         alert('Có lỗi xảy ra, vui lòng thử lại.');
