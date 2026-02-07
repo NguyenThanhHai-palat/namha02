@@ -83,3 +83,46 @@ const html5QrcodeScanner = new Html5QrcodeScanner(
 
 html5QrcodeScanner.render(onScanSuccess);
 updateStatistic();
+
+
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) {
+        try {
+            return JSON.parse(parts.pop().split(';').shift());
+        } catch {
+            return [];
+        }
+    }
+    return [];
+}
+
+function setCookie(name, value, days = 1) {
+    const expires = new Date(Date.now() + days * 86400000).toUTCString();
+    document.cookie = `${name}=${JSON.stringify(value)}; expires=${expires}; path=/`;
+}
+
+function updateStatistic() {
+    const list = getCookie("qr_scanned");
+
+    let s = 0, x = 0, r = 0;
+
+    list.forEach(id => {
+        const k = id.charAt(0).toLowerCase();
+        if (k === "s") s++;
+        if (k === "x") x++;
+        if (k === "r") r++;
+    });
+
+    document.getElementById("count-s").innerText = s;
+    document.getElementById("count-x").innerText = x;
+    document.getElementById("count-r").innerText = r;
+}
+
+function resetQR() {
+    if (!confirm("Reset toàn bộ QR đã quét?")) return;
+    setCookie("qr_scanned", []);
+    updateStatistic();
+}
