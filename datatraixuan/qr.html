@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Scan</title>
+
+    <!-- Thư viện scan QR -->
+    <script src="https://unpkg.com/html5-qrcode"></script>
+
+    <style>
+        #reader {
+            width: 300px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Quét QR</h3>
+    <div id="reader"></div>
+
+    <!-- Form -->
+    <input id="namecxx" placeholder="Tên"><br>
+    <input id="emailcxx" placeholder="Email"><br>
+    <input id="classcxx" placeholder="Lớp"><br>
+
+    <div id="BUTTON6">
+        <div id="BUTTON_TEXT6">
+            <p>Định danh</p>
+        </div>
+    </div>
+    <hr>
+
+    <h3>Thống kê QR đã quét</h3>
+    <ul>
+        <li>Sữa tươi: <span id="count-s">0</span></li>
+        <li>Xiên que: <span id="count-x">0</span></li>
+        <li>Rau má: <span id="count-r">0</span></li>
+    </ul>
+
+    <button onclick="resetQR()">Reset dữ liệu</button>
+
+    <script src="scan.js"></script>
+</body>
+</html>
