@@ -1,4 +1,12 @@
-let processing = false; // khóa chống bắn liên tục
+let processing = false;
+let lastScanned = "";
+
+function setStatus(text, color = "black") {
+    const el = document.getElementById("scan-status");
+    if (!el) return;
+    el.innerText = text;
+    el.style.color = color;
+}
 
 function onScanSuccess(decodedText, decodedResult) {
     if (processing) return;
@@ -9,22 +17,25 @@ function onScanSuccess(decodedText, decodedResult) {
     try {
         const url = new URL(decodedText);
         paramId = url.search.substring(1); // s001t
-    } catch (e) {
-        return; // QR không đúng format thì bỏ
-    }
-
-    // ===== COOKIE + CHỐNG QUÉT TRÙNG =====
-    let qrScanned = getCookie("qr_scanned");
-
-    // Nếu đã quét rồi → bỏ qua, KHÔNG POST
-    if (qrScanned.includes(paramId)) {
+    } catch {
         return;
     }
 
-    // ===== KHÓA TẠM =====
+    // Chặn scan lặp frame cùng QR
+    if (paramId === lastScanned) return;
+    lastScanned = paramId;
+
+    let qrScanned = getCookie("qr_scanned");
+
+    // ===== QR TRÙNG (ĐÃ QUÉT) =====
+    if (qrScanned.includes(paramId)) {
+        setStatus(`QR ${paramId} đã quét trước đó`, "orange");
+        return;
+    }
+
     processing = true;
 
-    // Lưu QR mới
+    // Lưu QR
     qrScanned.push(paramId);
     setCookie("qr_scanned", qrScanned);
     updateStatistic();
@@ -40,6 +51,8 @@ function onScanSuccess(decodedText, decodedResult) {
     .then(res => res.json())
     .then(data => {
         if (data.success) {
+            setStatus(`Đã định danh: ${data.data.name}`, "green");
+
             const namedk = document.getElementById("namecxx");
             const emaildk = document.getElementById("emailcxx");
             const classdk = document.getElementById("classcxx");
@@ -48,30 +61,19 @@ function onScanSuccess(decodedText, decodedResult) {
             emaildk.value = data.data.email;
             classdk.value = data.data.form_item6;
 
-            namedk.readOnly = true;
-            emaildk.readOnly = true;
-            classdk.readOnly = true;
-
-            const btnWrapper = document.getElementById("BUTTON6");
-            const btnText = document.querySelector("#BUTTON_TEXT6 p");
-
-            if (btnText) btnText.innerText = "Đã định danh";
-
-            if (btnWrapper) {
-                btnWrapper.style.pointerEvents = "none";
-                btnWrapper.style.opacity = "0.6";
-                btnWrapper.style.cursor = "not-allowed";
-            }
+        } else {
+            setStatus(`Không tìm thấy vé: ${paramId}`, "red");
         }
     })
-    .catch(err => {
-        console.error(err);
+    .catch(() => {
+        setStatus("Lỗi server", "red");
     })
     .finally(() => {
-        // Mở khóa sau 800ms để scan QR tiếp theo
+        // Mở scan lại sau 500ms
         setTimeout(() => {
             processing = false;
-        }, 800);
+            lastScanned = "";
+        }, 500);
     });
 }
 const html5QrcodeScanner = new Html5QrcodeScanner(
@@ -80,6 +82,4 @@ const html5QrcodeScanner = new Html5QrcodeScanner(
 );
 
 html5QrcodeScanner.render(onScanSuccess);
-
-// Load thống kê khi vào trang
 updateStatistic();
