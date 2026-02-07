@@ -63,6 +63,13 @@ function onScanSuccess(decodedText, decodedResult) {
 
         } else {
             setStatus(`Không tìm thấy vé: ${paramId}`, "red");
+            const namedk = document.getElementById("namecxx");
+            const emaildk = document.getElementById("emailcxx");
+            const classdk = document.getElementById("classcxx");
+
+            namedk.value = "";
+            emaildk.value ="";
+            classdk.value = "";
         }
     })
     .catch(() => {
