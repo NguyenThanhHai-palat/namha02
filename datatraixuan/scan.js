@@ -67,9 +67,9 @@ function onScanSuccess(decodedText, decodedResult) {
             const emaildk = document.getElementById("emailcxx");
             const classdk = document.getElementById("classcxx");
 
-            namedk.value = "";
-            emaildk.value ="";
-            classdk.value = "";
+            namedk.value = "0";
+            emaildk.value ="0";
+            classdk.value = "0";
         }
     })
     .catch(() => {
